@@ -1,0 +1,27 @@
+#jdbc.driverClassName=com.mysql.cj.jdbc.Driver
+#jdbc.url=jdbc:mysql://localhost:3306/produit?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+#jdbc.username= = root
+#jdbc.password= =
+#hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+spring:
+  jpa:    
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: MYSQL
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: false
+        format_sql: false 
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://localhost:3306/produit?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    platform: MYSQL
+    username: root
+    password:  
+server:
+  port: 8000    
+ 
